@@ -8,9 +8,9 @@ Unofficial plugin to enable Aurelia Hot Module Replacement (HMR) for [SystemJS](
 - [chokidar-socket-emitter](https://github.com/capaj/chokidar-socket-emitter) - simple file watcher
 
 ## Usage
-Install with your client-side package manager (choose one)
+Install with your client-side package manager
 - `jspm install npm:aurelia-loader-systemjs`
-- `jspm install npm:aurelia-systemjs-plugin`
+- `jspm install npm:aurelia-systemjs-hot-plugin`
 - `jspm install systemjs-hot-reloader-example`
 
 It works good with SystemJS `>0.19.x` not tested with `>=0.20.8`.
