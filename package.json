@@ -1,0 +1,66 @@
+{
+  "name": "aurelia-systemjs-hot-plugin",
+  "version": "1.0.0",
+  "description": "Aurelia Hot Module Replacement for SystemJS",
+  "main": "dist/index.js",
+  "jspmNodeConversion": false,
+  "registry": "npm",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c --watch",
+    "precommit": "npm run build && npm test",
+    "test": "echo No tests yet",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wegorich/aurelia-sysemjs-hot-plugin.git"
+  },
+  "author": "Egor Malkevich <eguur@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wegorich/aurelia-sysemjs-hot-plugin/issues"
+  },
+  "homepage": "https://github.com/wegorich/aurelia-sysemjs-hot-plugin#readme",
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "modules": false
+        }
+      ]
+    ],
+    "plugins": [
+      "external-helpers"
+    ]
+  },
+  "jspm": {
+    "map": {
+      "./dist/index.js": {
+        "node": "@empty",
+        "production": "./lib/production.js"
+      }
+    }
+  },
+  "dependencies": {
+    "aurelia-hot-module-reload": "^0.1.0",
+    "aurelia-loader-systemjs": "^1.0.4"
+  },
+  "devDependencies": {
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.1.4",
+    "rollup": "^0.41.4",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-commonjs": "^7.0.0",
+    "rollup-plugin-node-resolve": "^2.0.0",
+    "rollup-watch": "^3.2.2"
+  },
+  "standard": {
+    "ignore": [
+      "config.js",
+      "test/**",
+      "default-listener.js"
+    ]
+  }
+}
