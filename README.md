@@ -24,7 +24,7 @@ Assuming your app entry point is `app.js`, wrap your import statement so that yo
 <script>
     System.import('aurelia-loader-systemjs')
     Promise.all([
-        System.import('aurelia-systemjs-plugin'),
+        System.import('aurelia-systemjs-hot-plugin'),
         System.import('systemjs-hot-reloader-example')
     ]).then(([fileChanged, connect]) => {
         connect({
@@ -78,7 +78,7 @@ the `systemjs-hot-reloader` import in your `index.html`. But anyway you may chan
 <script>
     System.import('aurelia-loader-systemjs')
     Promise.all([
-        System.import('aurelia-systemjs-plugin'),
+        System.import('aurelia-systemjs-hot-plugin'),
         System.import('systemjs-hot-reloader-example')
     ]).then(([fileChanged, connect]) => {
         connect({
