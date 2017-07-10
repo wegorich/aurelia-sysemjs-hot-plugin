@@ -34,6 +34,8 @@ function cwd(url) {
 }
 
 function changeAureliaFiles(url) {
+    if (!url.endsWith('.html') && !url.endsWith('.js')) return;
+
     if (url && (SystemJS.loads[cwd(url)] || SystemJS.loads[formatTextUrl(cwd(url))])) {
         var moduleId = url.replace('dist/', '');
 
