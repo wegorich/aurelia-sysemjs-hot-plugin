@@ -1,6 +1,6 @@
 {
   "name": "aurelia-systemjs-hot-plugin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Aurelia Hot Module Replacement for SystemJS",
   "main": "dist/index.js",
   "jspmNodeConversion": false,
@@ -45,7 +45,8 @@
   },
   "dependencies": {
     "aurelia-hot-module-reload": "^0.1.0",
-    "aurelia-loader-systemjs": "^1.0.4"
+    "aurelia-loader-systemjs": "^1.0.4",
+    "aurelia-path": "^1.1.1"
   },
   "devDependencies": {
     "babel-plugin-external-helpers": "^6.22.0",
