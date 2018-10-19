@@ -11,7 +11,7 @@ Unofficial plugin to enable Aurelia Hot Module Replacement (HMR) for [SystemJS](
 Install with your client-side package manager
 - `jspm install npm:aurelia-loader-systemjs`
 - `jspm install npm:aurelia-systemjs-hot-plugin`
-- `jspm install systemjs-hot-reloader-example`
+- `jspm install npm:systemjs-hot-reloader-example`
 
 It works good with SystemJS `>0.19.x` not tested with `>=0.20.8`.
 
